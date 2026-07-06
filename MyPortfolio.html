@@ -28,10 +28,30 @@
             --badge-text:#FFFBF2;
             /* Rounded corners */
             --radius: 10px;
-
-
         }
-
+        /* This tells every element-Width includes padding and border.It makes layouts easier. */
+        *{
+            box-sizing:border-box;
+        }
+        /* This creates smooth scrolling when clicking navigation links. */
+        html{
+            scroll-behavior:smooth; 
+        }
+        /* This affects the whole webpage. */
+        body{
+            /* No margin */
+            margin:0;
+            /* Background */
+            background:var(--bg);
+            /* Text color */
+            color:var(--text);
+            /* Font */
+            font-family:'Inter';
+            /* Default font size */
+            font-size:16px;
+            /* Spacing between lines */
+            line-height:1.55;
+        }
      </style>
 </head>
 <body>
