@@ -92,7 +92,42 @@
             border-bottom:1px solid var(--line);
         }
 
-        
+        .nav-inner{
+            max-width:1180px;margin:0 auto;padding:0 32px;
+            display:flex;align-items:center;justify-content:space-between;
+            height:56px;
+        }
+
+        .filetab{
+            display:flex;align-items:center;gap:8px;
+            font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--text-dim);
+            padding:6px 14px;background:var(--surface-2);border-radius:6px 6px 0 0;
+            border:1px solid var(--line);border-bottom:none;
+        }
+
+        .filetab::before{
+            content:"";width:8px;height:8px;border-radius:50%;background:var(--pink);
+        }
+        nav.links{
+            display:flex;gap:28px;
+        }
+
+        nav.links a{
+            font-size:13px;text-decoration:none;color:var(--text-dim);
+            font-family:'IBM Plex Mono',monospace;
+            padding:4px 0;border-bottom:2px solid transparent;
+            transition:color .2s, border-color .2s;
+        }
+
+        nav.links a:hover{
+            color:var(--text);border-color:var(--cyan);
+        }
+
+        @media (max-width:640px){
+            nav.links{gap:16px;} nav.links a{font-size:11px;}
+        }
+
+
 
      </style>
 </head>
@@ -110,8 +145,11 @@
                 <a href="#contact">Contact</a>
             </nav>
         </div>
-
     </header>
+
+    <section class="hero">
+
+    </section>
     
 </body>
 </html>
