@@ -64,6 +64,26 @@
             font-family:'IBM Plex Mono',monospace;
             letter-spacing:0.02em;
         }
+
+        /* Default Styles */
+        /* Links */
+        a{
+            color:inherit;
+        }
+        /* Images - Images never overflow their container.*/
+        img{
+            max-width:100%;
+        }
+        /* This is used everywhere. max-width:1180px->Centers everything - Adds side padding.
+        Without this the page would stretch across the entire monitor. */
+        .wrap{
+            max-width:1180px;margin:0 auto;padding:0 32px;
+        }
+        /* If the screen becomes smaller than 640 pixels.. Use padding:20px; instead.*/
+        @media(max-width:640px) {
+            .wrap{padding:0 20px;}
+        }
+
      </style>
 </head>
 <body>
