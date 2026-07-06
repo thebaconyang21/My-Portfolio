@@ -84,9 +84,34 @@
             .wrap{padding:0 20px;}
         }
 
+        /* ---------- NAV ---------- */
+        header.nav{
+            position:sticky; top:0; z-index:50; /*position:sticky;So it stays at the top. */
+            background:rgba(255,251,242,0.88); 
+            backdrop-filter:blur(10px);
+            border-bottom:1px solid var(--line);
+        }
+
+        
+
      </style>
 </head>
 <body>
+
+    <header class="nav">
+        <div class="nav-inner">
+            <!-- my suggest ns dili na i apil ang canva -->
+            <div class="filetab">yang-portfolio<span style="opacity:.5">.canva</span></div> 
+            <nav class="links">
+                <a href="#templates">Templates</a>
+                <a href="#elements">Elements</a>
+                <a href="#toolkit">Toolkit</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+
+    </header>
     
 </body>
 </html>
